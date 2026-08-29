@@ -9,7 +9,7 @@ function App() {
 
   function fetchNotes() {
 
-    axios.get('http://localhost:3000/api/notes')
+    axios.get('https://day2-xsrq.onrender.com/api/notes')
 
       .then(res => {
         console.log(res.data);
@@ -31,7 +31,7 @@ function App() {
 
 
 
-    axios.post('http://localhost:3000/api/notes', {
+    axios.post('https://day2-xsrq.onrender.com/api/notes', {
       title: title.value,
       description: description.value,
     })
@@ -45,7 +45,7 @@ function App() {
 
   function handleDeleteNote(noteId) {
 
-    axios.delete('http://localhost:3000/api/notes/' + noteId)
+    axios.delete('https://day2-xsrq.onrender.com/api/notes/' + noteId)
 
       .then(res => {
         console.log(res.data);
@@ -61,7 +61,7 @@ function App() {
 
     if (!description.value.trim()) return alert('Description is required')
 
-    axios.patch('http://localhost:3000/api/notes/' + noteId,
+    axios.patch('https://day2-xsrq.onrender.com/api/notes/' + noteId,
       {
         description: description.value
       })

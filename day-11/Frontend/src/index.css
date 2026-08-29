@@ -1,0 +1,66 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,
+body,
+#root{
+    height: 100%;
+    width: 100%;
+}
+html{
+  background-color: #313c54;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.notes{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.note{
+  background-color: #68689f;
+  max-width: 20rem;
+  padding-inline: 0.8rem;
+  padding-block: 0.8rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-create-form{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+input ,button{
+  padding-inline: 0.4rem;
+  padding-block: 0.5rem;
+  outline: none;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+button{
+  background-color: #63868f;
+  color: whitesmoke;
+}
+button:active{
+  scale: 0.95;
+}
+
+.note-update-form{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+
+
